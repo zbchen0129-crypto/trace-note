@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TraceNote · 定性研究工作台</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <aside class="rail"><a class="brand" href="#"><span class="brand-icon">t.</span>TraceNote</a><div class="workspace-caption">RESEARCH WORKSPACE</div><nav aria-label="主导航"><button data-view="workspace" class="active">▤ <span>访谈标注</span></button><button data-view="codebook">☷ <span>标签与版本</span></button><button data-view="summary">◉ <span>主题汇总</span></button></nav><div class="rail-bottom"><span class="dot"></span> 本地研究空间<p>材料保存在本机 SQLite<br>旧版浏览器数据首次自动迁移</p><button id="export" class="secondary">导出项目 JSON ↗</button><button id="restore" class="secondary">恢复 JSON 备份</button><input id="restore-file" type="file" accept=".json,application/json" hidden></div></aside>
+  <main><header><div><div class="eyebrow">PROJECT / 001</div><h1>公共交通退出经历研究</h1><p>让每一个判断，都有原文可循。</p></div><button id="import" class="primary">＋ 导入访谈</button></header><div class="notice"><span>人工标注版</span> AI 尚未接入 · 默认材料为虚构教学案例 · 标签规则由研究者确认</div><section id="stats" class="stats" aria-label="项目统计"></section><div id="content"></div></main>
+  <dialog id="import-dialog"><form id="import-form"><div class="eyebrow">ADD MATERIAL</div><h2>导入访谈文本</h2><p class="muted">使用空行分段。系统分配段落 ID，原文导入后保持不变。</p><label>材料名称<input name="name" required maxlength="120" placeholder="例如：访谈 07 · 通勤经历"></label><label>选择 TXT 文件<input id="file" type="file" accept=".txt,text/plain"></label><label>或粘贴文本<textarea name="text" rows="10" required maxlength="200000" placeholder="每段之间留一个空行…"></textarea></label><div class="actions"><button type="button" id="cancel-import" class="secondary">取消</button><button class="primary">导入材料</button></div></form></dialog>
+  <div id="toast" role="status" aria-live="polite"></div><script type="module" src="app.js"></script>
+</body></html>

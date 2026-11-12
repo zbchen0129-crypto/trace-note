@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "title": "公共交通退出经历研究",
+  "documents": [
+    {
+      "id": "doc-demo",
+      "name": "教学案例 · 六段虚构访谈摘录",
+      "fictional": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "P001",
+      "documentId": "doc-demo",
+      "text": "上个月有三次公交晚到二十分钟。我得接孩子，后来就改开车了。"
+    },
+    {
+      "id": "P002",
+      "documentId": "doc-demo",
+      "text": "车票不贵，主要是每天要换两次车，第二趟经常接不上。"
+    },
+    {
+      "id": "P003",
+      "documentId": "doc-demo",
+      "text": "高峰期挤得转不了身。我有时候宁愿多花点钱打车。"
+    },
+    {
+      "id": "P004",
+      "documentId": "doc-demo",
+      "text": "一个月交通费大概一百二十，但这个钱对我没什么压力。"
+    },
+    {
+      "id": "P005",
+      "documentId": "doc-demo",
+      "text": "晚上那趟车让我不太放心。"
+    },
+    {
+      "id": "P006",
+      "documentId": "doc-demo",
+      "text": "以前经常晚点，不过改了时刻表以后好多了。现在不坐，主要是公司搬家了。"
+    }
+  ],
+  "versions": [
+    {
+      "id": 1,
+      "createdAt": "2026-11-11T07:23:41.506Z",
+      "reason": "初始标签体系",
+      "labels": [
+        {
+          "id": "reliability",
+          "name": "可靠性问题",
+          "definition": "晚点、取消或到达时间不确定，使出行难以安排。",
+          "include": "明确描述服务时间不可靠。",
+          "exclude": "车程长但时间稳定；不能由接不上车自行推断晚点。"
+        },
+        {
+          "id": "transfer",
+          "name": "换乘负担",
+          "definition": "换乘次数、步行或接续等待造成出行负担。",
+          "include": "明确描述换乘带来的困难。",
+          "exclude": "直达车的车程长。"
+        },
+        {
+          "id": "cost",
+          "name": "费用负担",
+          "definition": "交通支出造成压力或因价格而放弃公共交通。",
+          "include": "明确表达负担不起、票价过高或费用压力。",
+          "exclude": "价格不贵、没有压力；为改善体验接受额外支出。"
+        },
+        {
+          "id": "comfort",
+          "name": "舒适度问题",
+          "definition": "拥挤、座位、温度或噪声造成乘车不适。",
+          "include": "明确描述身体或感官不适。",
+          "exclude": "笼统的不放心、不想坐，含义未明时保留歧义。"
+        }
+      ]
+    }
+  ],
+  "reviews": [],
+  "nextParagraph": 7
+}

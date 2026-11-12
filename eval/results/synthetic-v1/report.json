@@ -1,0 +1,158 @@
+{
+  "manifest": {
+    "model": "gpt-5.6-terra",
+    "casesHash": "e149561d0a085fbb5a2048512b788d4c366915e3ce16a82c461b77923b96707c",
+    "codebookHash": "e0d75f5ad7fa30d865fccca88838a7f4400bd53c3c1260b2c5a418a957a27e89",
+    "adapterHash": "31fb6880ee1168afba2b141b7271b8a064f8d55a0b75146f88ef0ae9d1594dd0",
+    "runnerHash": "bfc8cf3ce490c09e18e088ba73730bd8cb6617f81a4c2a64cab3dfd0f2d059a3",
+    "baselineInstructions": "请根据给定研究问题、标签定义和上下文给当前段落做多标签标注，提供原文引文。没有适用标签时返回空数组。需要复核时填写 reviewReasons，不确定时填写 abstainReason。按给定 JSON 格式返回。",
+    "codebook": {
+      "id": 3,
+      "labels": [
+        {
+          "id": "reliability",
+          "name": "可靠性问题",
+          "definition": "晚点、取消或到达时间不确定，使出行难以安排。",
+          "include": "明确描述服务时间不可靠。",
+          "exclude": "车程长但时间稳定；不能由接不上车自行推断晚点。仅描述过去晚点且已改善、未说明当前仍晚点并导致放弃公共交通的，不计入当前退出原因。"
+        },
+        {
+          "id": "transfer",
+          "name": "换乘负担",
+          "definition": "换乘次数、步行或接续等待造成出行负担。",
+          "include": "明确描述换乘带来的困难。",
+          "exclude": "直达车的车程长。"
+        },
+        {
+          "id": "cost",
+          "name": "费用负担",
+          "definition": "交通支出造成压力或因价格而放弃公共交通。",
+          "include": "明确表达负担不起、票价过高或费用压力。",
+          "exclude": "价格不贵、没有压力；为改善体验接受额外支出。"
+        },
+        {
+          "id": "comfort",
+          "name": "舒适度问题",
+          "definition": "拥挤、座位、温度或噪声造成乘车不适。",
+          "include": "明确描述身体或感官不适。",
+          "exclude": "笼统的不放心、不想坐，含义未明时保留歧义。"
+        }
+      ],
+      "reason": "人工备注要求区分历史晚点与当前退出原因，并保留“现在仍晚点且因此退出”时应纳入的边界。该修改仅澄清现有排除规则；仍需研究者审核“已改善”是否确实不构成当前原因，以及是否存在明确的当前晚点证据。",
+      "createdAt": "2026-11-11T07:37:40.852193+00:00",
+      "suggestionId": "e8e75c6c-a960-4771-be6c-479564f90df3"
+    },
+    "referenceType": "synthetic-assistant-authored-not-human-gold",
+    "sampling": "one response per case per arm; alternating arm order"
+  },
+  "metrics": {
+    "direct": {
+      "n": 16,
+      "microPrecision": 1.0,
+      "microRecall": 1.0,
+      "microF1": 1.0,
+      "macroF1": 1.0,
+      "exactMatch": 1.0,
+      "negativeExact": 1.0,
+      "negativeCount": 5,
+      "responseErrors": 0,
+      "acceptedCoverage": 1.0,
+      "quoteCount": 14,
+      "exactQuoteRate": 1.0,
+      "uniqueQuoteRate": 1.0,
+      "byLabel": {
+        "reliability": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "transfer": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "cost": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "comfort": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failures": []
+    },
+    "workbench": {
+      "n": 16,
+      "microPrecision": 1.0,
+      "microRecall": 1.0,
+      "microF1": 1.0,
+      "macroF1": 1.0,
+      "exactMatch": 1.0,
+      "negativeExact": 1.0,
+      "negativeCount": 5,
+      "responseErrors": 0,
+      "acceptedCoverage": 1.0,
+      "quoteCount": 14,
+      "exactQuoteRate": 1.0,
+      "uniqueQuoteRate": 1.0,
+      "byLabel": {
+        "reliability": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "transfer": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "cost": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "comfort": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "support": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "failures": []
+    }
+  }
+}
