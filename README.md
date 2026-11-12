@@ -84,4 +84,4 @@ scripts/        curated source-package builder
 
 ## Next work
 
-Independent blind annotation and adjudication; full-length interview evaluation; controlled review-time study; stronger project recovery and corpus management; a separately designed public demo with authentication and usage limits. No public deployment or GitHub repository is implied by this local source package.
+Independent blind annotation and adjudication; full-length interview evaluation; controlled review-time study; stronger project recovery and corpus management; a separately designed public demo with authentication and usage limits. The source is maintained in the private GitHub repository `zbchen0129-crypto/trace-note`. There is no public hosted deployment.

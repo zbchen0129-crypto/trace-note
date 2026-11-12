@@ -9,11 +9,11 @@
   },
   {
     "path": "README.md",
-    "sha256": "fc22e0f73428fc88608ca88bf880bcc80b5940ef8dc1a8b486508d05cdfa3c77"
+    "sha256": "63804662ad145cb98a63b260f26ac7d2470ca747a287259552b7e684199d35b2"
   },
   {
     "path": "README.zh-CN.md",
-    "sha256": "b687b613b5ad67bfed3a875c0f36b4755c02a5f63f35bd70ba724e5c03eab37b"
+    "sha256": "44f2d16b6d20e184dd1d90d1cb68341ed29332fb54019706f0a994206f2adc5c"
   },
   {
     "path": "backend/core.py",
