@@ -1,0 +1,49 @@
+{
+  "case": "endorsement",
+  "arm": "extra",
+  "payload": {
+    "paragraph": {
+      "id": "P001",
+      "text": "甲研究认为，人们放弃公共交通是因为生活水平的提升。"
+    },
+    "context": [
+      {
+        "id": "P002",
+        "text": "以下先交代资料整理过程，本文对上述解释的评价见后文。"
+      },
+      {
+        "id": "P004",
+        "text": "本文认可前述生活水平解释。本次研究发现，收入提高让人们买得起私家车，生活水平提升确实是他们退出公共交通的原因。"
+      }
+    ],
+    "codebookVersion": {
+      "id": 1,
+      "labels": [
+        {
+          "id": "livingStandard",
+          "name": "生活水平提升",
+          "definition": "生活水平提升被讨论为退出公共交通的候选原因。",
+          "include": "支持、反对、引用或疑问均记录，并分别判断作者态度。",
+          "exclude": "无关主题。"
+        }
+      ]
+    },
+    "researchQuestion": "本文作者是否认可生活水平提升导致退出公共交通这一解释？"
+  },
+  "output": {
+    "annotations": [
+      {
+        "labelId": "livingStandard",
+        "quote": "生活水平的提升",
+        "holder": "甲研究",
+        "stance": "supports",
+        "stanceQuote": "生活水平提升确实是他们退出公共交通的原因。",
+        "stanceParagraphId": "P004"
+      }
+    ],
+    "reviewReasons": [],
+    "abstainReason": ""
+  },
+  "validation": "accepted",
+  "peakRssMiB": 33.94
+}

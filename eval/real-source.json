@@ -1,0 +1,14 @@
+{
+  "id": "darwin-eye-1860",
+  "sourceUrl": "https://darwin-online.org.uk/Variorum/1860/1860-186-c-1859.html",
+  "retrievedAt": "2026-11-23",
+  "author": "Charles Darwin",
+  "title": "On the Origin of Species — eye passage",
+  "year": "1860",
+  "locator": "Second British edition, Chapter VI, passage beginning To suppose that the eye (starts p. 186; continues beyond this page)",
+  "rights": "Public-domain original work (1860). Editorial apparatus and later-edition insertions excluded.",
+  "normalization": "Two consecutive sentences transcribed from the displayed 1860 reading; whitespace collapsed. Not a full paragraph, translation, or interview.",
+  "text": "To suppose that the eye, with all its inimitable contrivances for adjusting the focus to different distances, for admitting different amounts of light, and for the correction of spherical and chromatic aberration, could have been formed by natural selection, seems, I freely confess, absurd in the highest possible degree. Yet reason tells me, that if numerous gradations from a perfect and complex eye to one very imperfect and simple, each grade being useful to its possessor, can be shown to exist; if further, the eye does vary ever so slightly, and the variations be inherited, which is certainly the case; and if any variation or modification in the organ be ever useful to an animal under changing conditions of life, then the difficulty of believing that a perfect and complex eye could be formed by natural selection, though insuperable by our imagination, can hardly be considered real.",
+  "sha256": "694c0d83c2c2c3ad5083d93ac6dc9b5c0b5ac34b243476817600593bc977f80a",
+  "interpretation": "Assistant-authored workflow reference, not independent annotation. Opening concession followed by a conditional response; not quotation of another author and not an unconditional empirical proof."
+}

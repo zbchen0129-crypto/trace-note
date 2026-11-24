@@ -1,0 +1,38 @@
+{
+  "id": "S02",
+  "payload": {
+    "paragraph": {
+      "id": "S02",
+      "text": "有研究表明人们放弃公共交通是因为生活水平的提升，但本文认为实际上并非如此：本次访谈中，受访者停止乘公交是因线路取消，而不是生活水平提升。"
+    },
+    "context": [],
+    "codebookVersion": {
+      "id": 1,
+      "labels": [
+        {
+          "id": "livingStandard",
+          "name": "生活水平提升",
+          "definition": "生活水平提升被讨论为退出公共交通的候选原因。",
+          "include": "对这一解释的支持、反对、引用或疑问均记录，并分别判断态度。",
+          "exclude": "无关主题。"
+        }
+      ]
+    },
+    "researchQuestion": "本文作者是否认可生活水平提升导致当前退出公共交通这一解释？"
+  },
+  "output": {
+    "annotations": [
+      {
+        "labelId": "livingStandard",
+        "quote": "有研究表明人们放弃公共交通是因为生活水平的提升，但本文认为实际上并非如此：本次访谈中，受访者停止乘公交是因线路取消，而不是生活水平提升。",
+        "holder": "有研究；本文作者",
+        "stance": "opposes",
+        "stanceQuote": "但本文认为实际上并非如此：本次访谈中，受访者停止乘公交是因线路取消，而不是生活水平提升。"
+      }
+    ],
+    "reviewReasons": [],
+    "abstainReason": ""
+  },
+  "validation": "accepted",
+  "peakRssMiB": 33.73
+}

@@ -1,0 +1,38 @@
+{
+  "id": "S03",
+  "payload": {
+    "paragraph": {
+      "id": "S03",
+      "text": "文献综述中，甲研究将退出公共交通归因于生活水平提升。这里仅介绍该研究的观点，本文尚未评价这一解释是否成立。"
+    },
+    "context": [],
+    "codebookVersion": {
+      "id": 1,
+      "labels": [
+        {
+          "id": "livingStandard",
+          "name": "生活水平提升",
+          "definition": "生活水平提升被讨论为退出公共交通的候选原因。",
+          "include": "对这一解释的支持、反对、引用或疑问均记录，并分别判断态度。",
+          "exclude": "无关主题。"
+        }
+      ]
+    },
+    "researchQuestion": "本文作者是否认可生活水平提升导致当前退出公共交通这一解释？"
+  },
+  "output": {
+    "annotations": [
+      {
+        "labelId": "livingStandard",
+        "quote": "甲研究将退出公共交通归因于生活水平提升",
+        "holder": "甲研究",
+        "stance": "mentions",
+        "stanceQuote": "这里仅介绍该研究的观点，本文尚未评价这一解释是否成立。"
+      }
+    ],
+    "reviewReasons": [],
+    "abstainReason": ""
+  },
+  "validation": "accepted",
+  "peakRssMiB": 33.77
+}

@@ -1,0 +1,53 @@
+{
+  "arm": "excerptOnly",
+  "payload": {
+    "researchQuestion": "在本文研究的牙科论文推文样本中，作者是否认可推文计数可靠代表学术交流与参与？",
+    "researchScope": {
+      "subject": "本文作者 Robinson-Garcia 等对被引观点的评价；区分被引作者 Priem & Costello",
+      "timeframe": "2017 年本文研究的牙科论文推文样本"
+    },
+    "sourceMetadata": {
+      "type": "paper",
+      "author": "Nicolas Robinson-Garcia; Rodrigo Costas; Kimberley Isett; Julia Melkers; Diana Hicks",
+      "year": "2017",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0183551",
+      "locator": "Two non-contiguous excerpts in thematic order (Background quote, then Abstract results); NOT original adjacent paragraphs or document order. Whitespace normalized; no translation."
+    },
+    "paragraph": {
+      "id": "P007",
+      "locator": "Background; first sentence of the Priem & Costello (2010, p. 4) block quotation",
+      "text": "Twitter citations are also uniquely conversational, reflecting a broader discussion crossing traditional disciplinary boundaries."
+    },
+    "context": [],
+    "codebookVersion": {
+      "id": 1,
+      "labels": [
+        {
+          "id": "engagement",
+          "name": "推文计数代表学术交流",
+          "definition": "将论文推文计数视为学术交流或参与的指标这一观点。",
+          "include": "记录与当前研究问题有关的支持、反对、引述或不确定态度。",
+          "exclude": "无关主题；不将样本范围自动推广到所有平台活动。"
+        }
+      ]
+    }
+  },
+  "validation": "accepted",
+  "output": {
+    "annotations": [
+      {
+        "labelId": "engagement",
+        "quote": "Twitter citations are also uniquely conversational, reflecting a broader discussion crossing traditional disciplinary boundaries.",
+        "holder": "Priem & Costello (2010)",
+        "stance": "unclear",
+        "stanceQuote": "",
+        "stanceParagraphId": "P007"
+      }
+    ],
+    "reviewReasons": [
+      "该段是 Priem & Costello（2010）的引文，表达推文反映跨学科讨论的观点；但未提供 Robinson-Garcia 等作者对该观点的明确评价，无法判断其是否认可该观点适用于2017年牙科论文推文样本。"
+    ],
+    "abstainReason": ""
+  },
+  "peakRssMiB": 33.95
+}

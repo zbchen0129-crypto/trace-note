@@ -1,0 +1,12 @@
+{
+  "casesHash": "eb86fef24735031b35c67f1ce74028b9174095af881a0b3145a5b9164441c9f6",
+  "bookHash": "b38a86d5b5b8facbc2e67aae5bd76491f688a7ff10c660801311f08302c9df58",
+  "adapterHash": "2e26bf075b51ee4dc30331860226e101cabcce7aef14ddb7cad22481ae974802",
+  "runnerHash": "d123d6747f245dcc84dbe9f4cbeebebd9457950689379a7b97be3859be0b88d1",
+  "model": "gpt-5.6-terra",
+  "maxLiveCalls": 4,
+  "maxInputChars": 8000,
+  "memoryBudgetMiB": 256,
+  "maxResponseTokens": 2500,
+  "retries": 0
+}

@@ -1,0 +1,12 @@
+{
+  "fixtureHash": "67f0c07ad03adfd283bdb6d81d11060708edada52befd732d594abf084b07849",
+  "payloadsHash": "4bb75da1077d9c8dc04dd2e03f11a249b11ae71d1b7d4922d5d7d092bea42047",
+  "adapterHash": "cd5b3d93b96ab8041c1370f0940a208f2ced3d2a68476e7a6148ad563e876a38",
+  "runnerHash": "3885466bc040068ca98fe8b7d6e3334161a77721b5b69db24bd47ce78287bb1a",
+  "model": "gpt-5.6-terra",
+  "maxLiveCalls": 2,
+  "maxInputChars": 8000,
+  "maxResponseTokens": 2500,
+  "memoryBudgetMiB": 256,
+  "retries": 0
+}

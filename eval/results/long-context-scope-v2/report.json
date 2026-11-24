@@ -1,0 +1,120 @@
+{
+  "manifest": {
+    "casesHash": "438c0db631aefa1f4880849a25a101c28f082022002abbb4579c6043073eda16",
+    "codebookHash": "437a1fe48b633d466371f291459abf77ec2c02bf6048abddb0803e996902dfe5",
+    "runnerHash": "173f3dd5d9a75f8f910168102fcf867bb9be4737ede849311a5c6f5c6ec26874",
+    "adapterHash": "bbe1f814c0c3373540fc171c46edf852096d6f23ea067cdd71ade5803c61bb32",
+    "model": "gpt-5.6-terra",
+    "arms": [
+      "adjacent",
+      "bounded_full"
+    ],
+    "referenceType": "assistant-authored synthetic; not human gold",
+    "maxInputChars": 32000,
+    "memoryBudgetMiB": 256
+  },
+  "newCalls": 8,
+  "peakRssMiB": 34.3,
+  "results": [
+    {
+      "caseId": "L01",
+      "arm": "adjacent",
+      "labels": [
+        "reliability"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [],
+      "reviewExpected": true,
+      "referenceMatched": false,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L01",
+      "arm": "bounded_full",
+      "labels": [],
+      "uncertaintySignaled": true,
+      "referenceLabels": [],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L02",
+      "arm": "bounded_full",
+      "labels": [
+        "reliability"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [
+        "reliability"
+      ],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L02",
+      "arm": "adjacent",
+      "labels": [
+        "reliability"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [],
+      "reviewExpected": true,
+      "referenceMatched": false,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L03",
+      "arm": "adjacent",
+      "labels": [
+        "transfer"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [
+        "transfer"
+      ],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L03",
+      "arm": "bounded_full",
+      "labels": [],
+      "uncertaintySignaled": true,
+      "referenceLabels": [],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L04",
+      "arm": "bounded_full",
+      "labels": [
+        "cost"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [
+        "cost"
+      ],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    },
+    {
+      "caseId": "L04",
+      "arm": "adjacent",
+      "labels": [
+        "cost"
+      ],
+      "uncertaintySignaled": false,
+      "referenceLabels": [
+        "cost"
+      ],
+      "reviewExpected": false,
+      "referenceMatched": true,
+      "validation": "accepted"
+    }
+  ]
+}

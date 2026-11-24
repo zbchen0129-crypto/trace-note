@@ -17,6 +17,7 @@ class FakeModel:
         self.calls = 0
         self.hook = None
     def generate(self,kind,payload):
+        self.last_payload = copy.deepcopy(payload)
         self.calls += 1
         if self.hook: self.hook()
         if kind == 'rule':
@@ -98,6 +99,39 @@ class BackendTests(unittest.TestCase):
         self.store.restore(1,SEED)
         with self.store.connect() as db:
             self.assertEqual(db.execute('SELECT count(*) FROM snapshots').fetchone()[0],2)
+    def publish_scope(self, subject='受访者本人'):
+        r=self.store.load(); s=r['state']; v=copy.deepcopy(s['versions'][-1])
+        v.update(id=v['id']+1, reason='明确范围', scope={'subject':subject,'timeframe':'当前'})
+        s['versions'].append(v)
+        return self.store.save(r['revision'],s)
+    def test_scope_persisted_in_request_suggestion_and_restore(self):
+        self.publish_scope()
+        result=self.service.suggest(self.request())
+        expected={'subject':'受访者本人','timeframe':'当前'}
+        self.assertEqual(self.model.last_payload['researchScope'],expected)
+        self.assertEqual(result['state']['suggestions'][-1]['researchScope'],expected)
+        restored=self.store.restore(result['revision'],result['state'])
+        self.assertEqual(restored['state']['versions'][-1]['scope'],expected)
+    def test_scope_change_during_generation_keeps_old_scope_and_blocks_accept(self):
+        self.publish_scope()
+        self.model.hook=lambda:self.publish_scope('同事')
+        result=self.service.suggest(self.request()); suggestion=result['state']['suggestions'][-1]
+        self.assertEqual(suggestion['researchScope']['subject'],'受访者本人')
+        with self.assertRaises(Problem):
+            self.service.decide({'revision':result['revision'],'suggestionId':suggestion['id'],'action':'accept','review':self.review(result,[])})
+    def test_invalid_scope_rejected_without_mutating_history(self):
+        r=self.store.load(); s=copy.deepcopy(r['state']); v=copy.deepcopy(s['versions'][-1])
+        v.update(id=2,reason='范围',scope={'subject':'x'*201,'timeframe':'当前'});s['versions'].append(v)
+        with self.assertRaises(Problem):self.store.save(r['revision'],s)
+        self.assertEqual(self.store.load(),r)
+    def test_rule_acceptance_preserves_scope(self):
+        record=self.publish_scope(); s=record['state'];r=self.review(record,[]);r.update(id=1);s['reviews'].append(r)
+        self.store.save(record['revision'],s)
+        result=self.service.suggest(self.request('rule')); suggestion=result['state']['suggestions'][-1]
+        labels=copy.deepcopy(result['state']['versions'][-1]['labels']);labels[0]['exclude']=suggestion['output']['replacement']
+        result=self.service.decide({'revision':result['revision'],'suggestionId':suggestion['id'],'action':'accept','labels':labels,'reason':'确认'})
+        self.assertEqual(result['state']['versions'][-1]['scope'],{'subject':'受访者本人','timeframe':'当前'})
+        self.assertEqual(result['state']['decisions'][-1]['status'],'accepted')
     def test_missing_configuration_never_generates(self):
         model=OpenAIModel(); model.key=''; model.model=''
         with self.assertRaises(Problem): Service(self.store,model).suggest(self.request())

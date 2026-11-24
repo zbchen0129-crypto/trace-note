@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "title": "公共交通退出经历研究",
+  "documents": [
+    {
+      "id": "doc-demo",
+      "name": "教学案例 · 六段虚构访谈摘录",
+      "fictional": true
+    },
+    {
+      "id": "doc-2",
+      "name": "On the Origin of Species — eye passage",
+      "fictional": false,
+      "source": {
+        "type": "book",
+        "author": "Charles Darwin",
+        "year": "1860",
+        "url": "https://darwin-online.org.uk/Variorum/1860/1860-186-c-1859.html",
+        "locator": "Chapter VI — eye passage"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "P001",
+      "documentId": "doc-demo",
+      "text": "上个月有三次公交晚到二十分钟。我得接孩子，后来就改开车了。"
+    },
+    {
+      "id": "P002",
+      "documentId": "doc-demo",
+      "text": "车票不贵，主要是每天要换两次车，第二趟经常接不上。"
+    },
+    {
+      "id": "P003",
+      "documentId": "doc-demo",
+      "text": "高峰期挤得转不了身。我有时候宁愿多花点钱打车。"
+    },
+    {
+      "id": "P004",
+      "documentId": "doc-demo",
+      "text": "一个月交通费大概一百二十，但这个钱对我没什么压力。"
+    },
+    {
+      "id": "P005",
+      "documentId": "doc-demo",
+      "text": "晚上那趟车让我不太放心。"
+    },
+    {
+      "id": "P006",
+      "documentId": "doc-demo",
+      "text": "以前经常晚点，不过改了时刻表以后好多了。现在不坐，主要是公司搬家了。"
+    },
+    {
+      "id": "P007",
+      "documentId": "doc-2",
+      "text": "To suppose that the eye, with all its inimitable contrivances for adjusting the focus to different distances, for admitting different amounts of light, and for the correction of spherical and chromatic aberration, could have been formed by natural selection, seems, I freely confess, absurd in the highest possible degree. Yet reason tells me, that if numerous gradations from a perfect and complex eye to one very imperfect and simple, each grade being useful to its possessor, can be shown to exist; if further, the eye does vary ever so slightly, and the variations be inherited, which is certainly the case; and if any variation or modification in the organ be ever useful to an animal under changing conditions of life, then the difficulty of believing that a perfect and complex eye could be formed by natural selection, though insuperable by our imagination, can hardly be considered real."
+    }
+  ],
+  "versions": [
+    {
+      "id": 1,
+      "createdAt": "2026-11-24T00:31:26.256Z",
+      "reason": "初始标签体系",
+      "labels": [
+        {
+          "id": "reliability",
+          "name": "可靠性问题",
+          "definition": "晚点、取消或到达时间不确定，使出行难以安排。",
+          "include": "明确描述服务时间不可靠。",
+          "exclude": "车程长但时间稳定；不能由接不上车自行推断晚点。"
+        },
+        {
+          "id": "transfer",
+          "name": "换乘负担",
+          "definition": "换乘次数、步行或接续等待造成出行负担。",
+          "include": "明确描述换乘带来的困难。",
+          "exclude": "直达车的车程长。"
+        },
+        {
+          "id": "cost",
+          "name": "费用负担",
+          "definition": "交通支出造成压力或因价格而放弃公共交通。",
+          "include": "明确表达负担不起、票价过高或费用压力。",
+          "exclude": "价格不贵、没有压力；为改善体验接受额外支出。"
+        },
+        {
+          "id": "comfort",
+          "name": "舒适度问题",
+          "definition": "拥挤、座位、温度或噪声造成乘车不适。",
+          "include": "明确描述身体或感官不适。",
+          "exclude": "笼统的不放心、不想坐，含义未明时保留歧义。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questionId": "Q-db86bd68-2e6c-463e-8c30-c8b5a2a4b8db",
+      "createdAt": "2026-11-24T00:31:26.260Z",
+      "reason": "新研究问题的初始规则",
+      "labels": [
+        {
+          "id": "topic",
+          "name": "复杂性反对意见",
+          "definition": "判断作者是否认可“眼睛复杂，因此不能由自然选择形成”的观点。",
+          "include": "与当前研究问题有关的支持、反对、引述或疑问，分别记录态度。",
+          "exclude": "与当前研究问题无关的内容。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "questionId": "Q-da792890-84ac-4a54-bc78-2da88acd61a2",
+      "createdAt": "2026-11-24T00:31:26.260Z",
+      "reason": "新研究问题的初始规则",
+      "labels": [
+        {
+          "id": "topic",
+          "name": "有用渐变条件",
+          "definition": "区分条件论证与无条件的实证结论。",
+          "include": "与当前研究问题有关的支持、反对、引述或疑问，分别记录态度。",
+          "exclude": "与当前研究问题无关的内容。"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "paragraphId": "P007",
+      "versionId": 2,
+      "sourceRevision": 0,
+      "annotations": [
+        {
+          "labelId": "topic",
+          "quote": "absurd in the highest possible degree",
+          "start": 284,
+          "end": 321,
+          "holder": "Charles Darwin（先让步，后回应）",
+          "stance": "opposes",
+          "stanceQuote": "Yet reason tells me, that if numerous gradations from a perfect and complex eye to one very imperfect and simple, each grade being useful to its possessor, can be shown to exist; if further, the eye does vary ever so slightly, and the variations be inherited, which is certainly the case; and if any variation or modification in the organ be ever useful to an animal under changing conditions of life, then the difficulty of believing that a perfect and complex eye could be formed by natural selection, though insuperable by our imagination, can hardly be considered real."
+        }
+      ],
+      "note": "开发助手演示判断：转折后的条件论证回应了开头困难；不是独立研究者标注。",
+      "status": "confirmed",
+      "source": "human",
+      "createdAt": "2026-11-24T00:31:26.260Z"
+    },
+    {
+      "id": 2,
+      "paragraphId": "P007",
+      "versionId": 3,
+      "sourceRevision": 0,
+      "annotations": [
+        {
+          "labelId": "topic",
+          "quote": "each grade being useful to its possessor",
+          "start": 437,
+          "end": 477,
+          "holder": "Charles Darwin",
+          "stance": "supports",
+          "stanceQuote": "Yet reason tells me, that if numerous gradations from a perfect and complex eye to one very imperfect and simple, each grade being useful to its possessor, can be shown to exist; if further, the eye does vary ever so slightly, and the variations be inherited, which is certainly the case; and if any variation or modification in the organ be ever useful to an animal under changing conditions of life, then the difficulty of believing that a perfect and complex eye could be formed by natural selection, though insuperable by our imagination, can hardly be considered real."
+        }
+      ],
+      "note": "支持的是作者提出了这一论证条件，不声称这些条件已由本摘录全部证明。",
+      "status": "confirmed",
+      "source": "human",
+      "createdAt": "2026-11-24T00:31:26.260Z"
+    },
+    {
+      "id": 3,
+      "paragraphId": "P007",
+      "versionId": 2,
+      "sourceRevision": 1,
+      "annotations": [
+        {
+          "labelId": "topic",
+          "quote": "absurd in the highest possible degree",
+          "start": 284,
+          "end": 321,
+          "holder": "Charles Darwin（先让步，后回应）",
+          "stance": "opposes",
+          "stanceQuote": "Yet reason tells me, that if numerous gradations from a perfect and complex eye to one very imperfect and simple, each grade being useful to its possessor, can be shown to exist; if further, the eye does vary ever so slightly, and the variations be inherited, which is certainly the case; and if any variation or modification in the organ be ever useful to an animal under changing conditions of life, then the difficulty of believing that a perfect and complex eye could be formed by natural selection, though insuperable by our imagination, can hardly be considered real."
+        }
+      ],
+      "note": "重新核对版本、章节和出处；保留原判断。",
+      "status": "confirmed",
+      "source": "human",
+      "createdAt": "2026-11-24T00:31:26.288Z"
+    }
+  ],
+  "nextParagraph": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "当前为何放弃公共交通？"
+    },
+    {
+      "id": "Q-db86bd68-2e6c-463e-8c30-c8b5a2a4b8db",
+      "text": "作者是否将眼睛的复杂性视为否定自然选择的理由？"
+    },
+    {
+      "id": "Q-da792890-84ac-4a54-bc78-2da88acd61a2",
+      "text": "作者是否以有用的渐变作为回应困难的条件？"
+    }
+  ],
+  "activeQuestionId": "Q-db86bd68-2e6c-463e-8c30-c8b5a2a4b8db",
+  "suggestions": [],
+  "decisions": [],
+  "sourceRevisions": [
+    {
+      "id": 1,
+      "documentId": "doc-2",
+      "source": {
+        "type": "book",
+        "author": "Charles Darwin",
+        "year": "1860",
+        "url": "https://darwin-online.org.uk/Variorum/1860/1860-186-c-1859.html",
+        "locator": "Second British edition, Chapter VI, passage beginning To suppose that the eye (starts p. 186; continues beyond this page)"
+      },
+      "reason": "验收：补充核对后的版次与摘录定位；不把起始页当作完整摘录页码。",
+      "createdAt": "2026-11-24T00:31:26.268311+00:00"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "offline developer-reference validation",
+  "modelCalls": 0,
+  "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0183551",
+  "peakRssMiB": 42.984375,
+  "checks": [
+    "source hashes",
+    "quotation alone excluded from support",
+    "author response kept as separate paragraph",
+    "holder retained",
+    "current summary replaces earlier interpretation without deleting history"
+  ],
+  "limits": "2 excerpts; fixture <16 KB; process RSS checkpoint <256 MiB; no automatic retry"
+}

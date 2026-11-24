@@ -1,0 +1,40 @@
+{
+  "id": "S04",
+  "payload": {
+    "paragraph": {
+      "id": "S04",
+      "text": "生活水平提升是否导致人们放弃公共交通？本段尚不能判断，相关判断需要后续材料才能作出。"
+    },
+    "context": [],
+    "codebookVersion": {
+      "id": 1,
+      "labels": [
+        {
+          "id": "livingStandard",
+          "name": "生活水平提升",
+          "definition": "生活水平提升被讨论为退出公共交通的候选原因。",
+          "include": "对这一解释的支持、反对、引用或疑问均记录，并分别判断态度。",
+          "exclude": "无关主题。"
+        }
+      ]
+    },
+    "researchQuestion": "本文作者是否认可生活水平提升导致当前退出公共交通这一解释？"
+  },
+  "output": {
+    "annotations": [
+      {
+        "labelId": "livingStandard",
+        "quote": "生活水平提升是否导致人们放弃公共交通？",
+        "holder": "本文作者",
+        "stance": "unclear",
+        "stanceQuote": ""
+      }
+    ],
+    "reviewReasons": [
+      "段落以疑问提出“生活水平提升”是否导致放弃公共交通，并明确说明“本段尚不能判断，相关判断需要后续材料才能作出”，因此本文作者在当前段落未认可也未反对该解释。"
+    ],
+    "abstainReason": ""
+  },
+  "validation": "accepted",
+  "peakRssMiB": 33.78
+}

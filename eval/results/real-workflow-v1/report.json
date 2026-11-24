@@ -1,0 +1,37 @@
+{
+  "kind": "offline workflow acceptance; assistant-authored decisions",
+  "sourceUrl": "https://darwin-online.org.uk/Variorum/1860/1860-186-c-1859.html",
+  "sourceTextSha256": "694c0d83c2c2c3ad5083d93ac6dc9b5c0b5ac34b243476817600593bc977f80a",
+  "realExcerpts": 1,
+  "researchQuestions": 2,
+  "liveModelCalls": 0,
+  "checks": [
+    "literal evidence and source preserved",
+    "opposition excluded from support group",
+    "question isolation",
+    "source correction invalidates both questions",
+    "one-question reconfirmation leaves other stale",
+    "SQLite save and backup restore",
+    "portable evidence report"
+  ],
+  "stages": [
+    {
+      "stage": "prepare",
+      "peakRssMiB": 43.109375
+    },
+    {
+      "stage": "finish",
+      "peakRssMiB": 42.921875
+    }
+  ],
+  "pythonPeakRssMiB": 29.4375,
+  "memoryBudgetMiBPerProcess": 256,
+  "limits": "128 KB input files, one excerpt, sequential child processes, 20 seconds per child; checkpoint RSS guard, not machine-wide allocation ceiling",
+  "codeHashes": {
+    "web/domain.js": "ae0b920c4ae179781614a34358e9f7cb995edc08c6c6a0647856c16786f897de",
+    "backend/core.py": "634a93a4bff45c10f96b0e4b0343bb698afc2f490089ec7e395676ae02d42f75",
+    "backend/service.py": "9c8dcf352259e1253f035d4ae3b378164c88b7ddfbccf667f325d936cb86aac3",
+    "eval/real_workflow.js": "c8311fd1360fafa20acf810dc08fb3a7f2ca8b7015a0c0cf48654e5839aea906",
+    "eval/real_workflow.py": "0202bd59126943cbaf7f1cf08e07a3dfbf5535109eafeb4b2eba2ed10691debf"
+  }
+}

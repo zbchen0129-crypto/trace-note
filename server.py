@@ -70,6 +70,8 @@ class Handler(SimpleHTTPRequestHandler):
             path = urlsplit(self.path).path
             if path == '/api/workspace': result = self.service.store.save(args['revision'],args['state'])
             elif path == '/api/restore': result = self.service.store.restore(args['revision'],args['state'])
+            elif path == '/api/source': result = self.service.correct_source(args)
+            elif path == '/api/preview': result = self.service.preview(args)
             elif path == '/api/suggest': result = self.service.suggest(args)
             elif path == '/api/decide': result = self.service.decide(args)
             else: raise Problem('接口不存在。',404)
